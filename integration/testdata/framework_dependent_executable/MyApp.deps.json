@@ -1,12 +1,12 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v2.1/ubuntu.18.04-x64",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "name": ".NETCoreApp,Version=v3.1/ubuntu.18.04-x64",
+    "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v2.1": {},
-    ".NETCoreApp,Version=v2.1/ubuntu.18.04-x64": {
+    ".NETCoreApp,Version=v3.1": {},
+    ".NETCoreApp,Version=v3.1/ubuntu.18.04-x64": {
       "MyApp/1.0.0": {
         "runtime": {
           "MyApp.dll": {}

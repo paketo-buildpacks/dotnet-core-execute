@@ -1,32 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/home/ubuntu/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_deployment/.source-code/MyApp.csproj": {}
+    "/Users/pivotal/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_executable/.source-code/MyApp.csproj": {}
   },
   "projects": {
-    "/home/ubuntu/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_deployment/.source-code/MyApp.csproj": {
+    "/Users/pivotal/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_executable/.source-code/MyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/ubuntu/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_deployment/.source-code/MyApp.csproj",
+        "projectUniqueName": "/Users/pivotal/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_executable/.source-code/MyApp.csproj",
         "projectName": "MyApp",
-        "projectPath": "/home/ubuntu/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_deployment/.source-code/MyApp.csproj",
-        "packagesPath": "/home/ubuntu/.nuget/packages/",
-        "outputPath": "/home/ubuntu/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_deployment/.source-code/obj/",
+        "projectPath": "/Users/pivotal/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_executable/.source-code/MyApp.csproj",
+        "packagesPath": "/Users/pivotal/.nuget/packages/",
+        "outputPath": "/Users/pivotal/workspace/paketo-buildpacks/dotnet-execute/integration/testdata/framework_dependent_executable/.source-code/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
+          "/Users/pivotal/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp2.1"
+          "netcoreapp3.1"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp2.1": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,19 +38,34 @@
         }
       },
       "frameworks": {
-        "netcoreapp2.1": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "target": "Package",
-              "version": "[2.1.0, )",
-              "autoReferenced": true
-            }
-          },
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[3.1.12, 3.1.12]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
